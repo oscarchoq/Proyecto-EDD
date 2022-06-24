@@ -5,8 +5,10 @@
     <script type="module">
 
         import {agregar} from './lib/index.js';
+        import {agregar_final} from './lib/index.js';
       
         window.agregar=agregar;
+        window.agregar_final = agregar_final;
 
     </script>
 
@@ -16,7 +18,8 @@
     
 <canvas id="tutorial" width="700" height="150"></canvas>
 <div id="salida"></div>
-    <button onclick="agregar()">agregar</button>
+    <button onclick="agregar()">INSERTA INICIO</button>
+    <button onclick="agregar_final()">INSERTA FINAL</button>
 </body>
 
 </html>
