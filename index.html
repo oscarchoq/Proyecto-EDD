@@ -1,0 +1,22 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="lib/style.css">
+    <script type="module">
+
+        import {agregar} from './lib/index.js';
+      
+        window.agregar=agregar;
+
+    </script>
+
+</head>
+
+<body>
+    
+<canvas id="tutorial" width="700" height="150"></canvas>
+<div id="salida"></div>
+    <button onclick="agregar()">agregar</button>
+</body>
+
+</html>
