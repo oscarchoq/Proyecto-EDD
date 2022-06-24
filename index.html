@@ -1,16 +1,20 @@
 <html>
 
 <head>
+    <center><h1>LISTAS SIMPLEMENTE ENLAZADAS</h1></center>
+    
     <link rel="stylesheet" href="lib/style.css">
     <script type="module">
 
         import {agregar} from './lib/index.js';
         import {agregar_final} from './lib/index.js';
         import {agregar_antes_X} from './lib/index.js';
+        import {agregar_despues_X} from './lib/index.js';
       
         window.agregar=agregar;
         window.agregar_final = agregar_final;
         window.agregar_antes_X = agregar_antes_X;
+        window.agregar_despues_X = agregar_despues_X;
 
     </script>
 
@@ -18,11 +22,13 @@
 
 <body>
     
-<canvas id="tutorial" width="700" height="150"></canvas>
+<center><canvas id="tutorial" width="700" height="150"></canvas></center>
 <div id="salida"></div>
+    <center><h1>
     <button onclick="agregar()">INSERTA INICIO</button>
     <button onclick="agregar_final()">INSERTA FINAL</button>
     <button onclick="agregar_antes_X()">INSERTAR ANTES DE</button>
+    <button onclick="agregar_despues_X()">INSERTAR DESPUES DE</button>
 </body>
 
 </html>
