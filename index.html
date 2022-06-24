@@ -10,11 +10,16 @@
         import {agregar_final} from './lib/index.js';
         import {agregar_antes_X} from './lib/index.js';
         import {agregar_despues_X} from './lib/index.js';
-      
+        import {eliminar_inicio} from './lib/index.js';
+
+        // INSERCION EN LISTAS
         window.agregar=agregar;
         window.agregar_final = agregar_final;
         window.agregar_antes_X = agregar_antes_X;
         window.agregar_despues_X = agregar_despues_X;
+
+        // ELIMINACION EN LISTAS
+        window.eliminar_inicio = eliminar_inicio;
 
     </script>
 
@@ -29,6 +34,8 @@
     <button onclick="agregar_final()">INSERTA FINAL</button>
     <button onclick="agregar_antes_X()">INSERTAR ANTES DE</button>
     <button onclick="agregar_despues_X()">INSERTAR DESPUES DE</button>
+
+    <button onclick="eliminar_inicio()">ELIMINAR INICIO</button>
 </body>
 
 </html>
