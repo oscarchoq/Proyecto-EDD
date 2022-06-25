@@ -14,6 +14,7 @@
         import {eliminar_final} from './lib/index.js';
         import {eliminar_X} from './lib/index.js';
         import {eliminar_antes_X} from './lib/index.js';
+        import {eliminar_despues_X} from './lib/index.js';
 
         // INSERCION EN LISTAS
         window.agregar=agregar;
@@ -26,6 +27,7 @@
         window.eliminar_final = eliminar_final;
         window.eliminar_X = eliminar_X;
         window.eliminar_antes_X = eliminar_antes_X;
+        window.eliminar_despues_X = eliminar_despues_X;
 
     </script>
 
@@ -38,13 +40,14 @@
     <center><h1>
     <button onclick="agregar()">INSERTA INICIO</button>
     <button onclick="agregar_final()">INSERTA FINAL</button>
-    <button onclick="agregar_antes_X()">INSERTAR ANTES DE</button>
-    <button onclick="agregar_despues_X()">INSERTAR DESPUES DE</button>
+    <button onclick="agregar_antes_X()">INSERTAR ANTES DE X</button>
+    <button onclick="agregar_despues_X()">INSERTAR DESPUES DE X</button>
 
     <button onclick="eliminar_inicio()">ELIMINAR INICIO</button>
     <button onclick="eliminar_final()">ELIMINAR FINAL</button>
     <button onclick="eliminar_X()">ELIMINAR UN NODO X</button>
-    <button onclick="eliminar_antes_X()">ELIMINAR UN NODO ANTES DE X</button>
+    <button onclick="eliminar_antes_X()">ELIMINAR ANTES DE X</button>
+    <button onclick="eliminar_despues_X()">ELIMINAR DESPUES DE X</button>
 </body>
 
 </html>
