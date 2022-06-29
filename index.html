@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="lib/style.css">
     <script type="module">
 
-        import {agregar} from './lib/index.js';
+        import {agregar_inicio} from './lib/index.js';
         import {agregar_final} from './lib/index.js';
         import {agregar_antes_X} from './lib/index.js';
         import {agregar_despues_X} from './lib/index.js';
@@ -17,7 +17,7 @@
         import {eliminar_despues_X} from './lib/index.js';
 
         // INSERCION EN LISTAS
-        window.agregar=agregar;
+        window.agregar_inicio = agregar_inicio;
         window.agregar_final = agregar_final;
         window.agregar_antes_X = agregar_antes_X;
         window.agregar_despues_X = agregar_despues_X;
@@ -38,7 +38,7 @@
 <center><canvas id="tutorial" width="700" height="150"></canvas></center>
 <div id="salida"></div>
     <center><h1>
-    <button onclick="agregar()">INSERTA INICIO</button>
+    <button onclick="agregar_inicio()">INSERTA INICIO</button>
     <button onclick="agregar_final()">INSERTA FINAL</button>
     <button onclick="agregar_antes_X()">INSERTAR ANTES DE X</button>
     <button onclick="agregar_despues_X()">INSERTAR DESPUES DE X</button>
