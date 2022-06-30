@@ -1,1 +1,52 @@
-canvas { border: 1px solid black; }
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+:root {
+    --color1: #808080; /*00467F 808080*/
+    --color2: #3fada8;  /*A5CC82  3fada8*/ 
+    --gradient: -webkit-linear-gradient(left, var(--color1), var(--color2));
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(to right, #e0eafc, #cfdef3);
+    /*background: linear-gradient(to bottom, #ffefba, #ffffff);*/
+}
+
+canvas { 
+    margin: 1%;
+    background-color: white;
+    border: 2px solid transparent;
+    border-image: var(--gradient);
+    border-image-slice: 1%;
+}
+
+h1 {
+    margin: 1%;
+    font-family: "Fredoka One";
+    font-size: 48px;
+    text-align: center;
+}
+
+p {
+    margin: 2%;
+    font-family: "Fredoka One";
+    font-size: 20px;
+}
+
+button {
+    margin: 0% 1% 1% 0%;
+    /* BORDES */
+    background: transparent;
+    border: 2px solid transparent;
+    border-image: var(--gradient);
+    border-image-slice: 1%;
+
+    border-right: 5px solid var(--color1);
+    border-left: 5px solid var(--color2);
+
+    /* TEXTOS */
+    color: var(--color1);
+    font-family: sans-serif;
+    font-size: 17px; 
+    font-weight: bold;
+}
