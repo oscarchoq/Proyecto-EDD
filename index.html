@@ -35,6 +35,19 @@
         window.eliminar_antes_X = eliminar_antes_X;
         window.eliminar_despues_X = eliminar_despues_X;
 
+        //LISTAS CIRCULARES SIMPLEMENTE ENLAZADAS
+        import {agregar_inicio_lstCir, agregar_final_lstCir, agregar_antes_X_lstCir, agregar_despues_X_lstCir} from './lib/lstCirSimpLig/index.js';
+        import {eliminar_inicio_lstCir, eliminar_final_lstCir, eliminar_X_lstCir, eliminar_antes_X_lstCir, eliminar_despues_X_lstCir} from './lib/lstCirSimpLig/index.js';
+
+        window.agregar_inicio_lstCir = agregar_inicio_lstCir;
+        window.agregar_final_lstCir = agregar_final_lstCir;
+        window.agregar_antes_X_lstCir = agregar_antes_X_lstCir;
+        window.agregar_despues_X_lstCir = agregar_despues_X_lstCir;
+        window.eliminar_inicio_lstCir = eliminar_inicio_lstCir;
+        window.eliminar_final_lstCir = eliminar_final_lstCir;
+        window.eliminar_X_lstCir = eliminar_X_lstCir;
+        window.eliminar_antes_X_lstCir = eliminar_antes_X_lstCir;
+        window.eliminar_despues_X_lstCir = eliminar_despues_X_lstCir;
 
         //EVENTOS DE MENU PARA MANEJAR HISTORIAL
         import {clickListaSimplementeEnlazada,clickListaCirsularSimplementeEnlazada,clickListaDoblementeEnlazada} from './lib/index.js';
@@ -141,41 +154,28 @@
 
     <div id="vista2" style="display:none">
 
-        <div class="container">
-            <div class="row text-center">
-                <div class="col" style="margin-top:20px">
-                    <h4>LISTA CIRCULAR SIMPLEMENTE LIGADA</h4> 
-                </div>
-            </div>
-        </div>
-    
-        <div style="margin: 10px">   
-            <canvas id="tutorial2"></canvas>
-        </div>
-    
-        <div  class="container">
-            <div class="row text-center">
-                <div class="col-xs-12 col-sm-12 col-md-6 ">
-                        <button onclick="">INSERTAR AL INICIO</button>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-6">
-                        <button onclick="">INSERTAR AL FINAL</button>
-                </div>
-            </div>
-            <div class="row text-center">
-                    <div class="col-xs-12 col-sm-12 col-md-6">
-                        <button onclick="">INSERTAR ANTES DE X</button>
-                    </div>
-                    <div class="col-xs-12 col-sm-12 col-md-6">
-                        <button onclick="">ELIMINAR AL INICIO</button>
-                    </div>
-            </div>
-            <div class="row text-center">
-                <div class="col">
-                    <button onclick="window.history.back()">MENU</button>
-                </div>
-            </div>
-        </div>
+        <h1>LISTAS CIRCULARES SIMPLEMENTE ENLAZADAS</h1>
+
+        <center><canvas id="tutorial" width="700" height="150"></canvas></center>
+        <div id="salida"></div>
+        <center>
+            <p>INSERCION EN LISTAS</p>
+            <button onclick="agregar_inicio_lstCir()">INSERTA INICIO</button>
+            <button onclick="agregar_final_lstCir()">INSERTA FINAL</button>
+            <button onclick="agregar_antes_X_lstCir()">INSERTAR ANTES DE X</button>
+            <button onclick="agregar_despues_X_lstCir()">INSERTAR DESPUES DE X</button>
+
+            <p>ELIMINACION EN LISTAS</p>
+            <button onclick="eliminar_inicio_lstCir()">ELIMINAR INICIO</button>
+            <button onclick="eliminar_final_lstCir()">ELIMINAR FINAL</button>
+            <button onclick="eliminar_X_lstCir()">ELIMINAR UN NODO X</button>
+            <button onclick="eliminar_antes_X_lstCir()">ELIMINAR ANTES DE X</button>
+            <button onclick="eliminar_despues_X_lstCir()">ELIMINAR DESPUES DE X</button>
+            
+            <p></p>
+            <button onclick="window.history.back()">MENU</button>
+            
+        </center>
     
     </div>
 
