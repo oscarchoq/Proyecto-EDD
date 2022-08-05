@@ -50,3 +50,28 @@ button {
     font-size: 17px; 
     font-weight: bold;
 }
+
+#principal button{
+    width:150px;
+    margin:5px;
+    border-radius: 5px;
+}
+
+#principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+@media (min-width: 768px){ 
+    .buttonleftmenu{
+        text-align: right;
+    }
+    .buttonrightmenu{
+        text-align: left;
+    }
+    .buttoncentermenu{
+        text-align: center;
+    }
+}
