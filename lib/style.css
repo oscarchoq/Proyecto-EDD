@@ -7,54 +7,74 @@
 }
 
 body {
-    min-height: 100vh;
+    min-height: 100;
     background: linear-gradient(to right, #e0eafc, #cfdef3);
     /*background: linear-gradient(to bottom, #ffefba, #ffffff);*/
 }
 
 canvas { 
-    margin: 1%;
     background-color: white;
+    /*
     border: 2px solid transparent;
     border-image: var(--gradient);
-    border-image-slice: 1%;
+    border-image-slice: 1%;*/
+    border-radius: 15px;
+    border: 2px solid #808080;
+    padding: 20px;
+    box-shadow: 5px 6px #808080;
 }
 
-h1 {
-    margin: 1%;
+
+.titulo{
+    /*
     font-family: "Fredoka One";
     font-size: 48px;
     text-align: center;
+    */
+    margin: 0 auto;
+    text-align: center;
+    font: italic bold 48px Fredoka One, Serif;
+    text-shadow: 4px 3px 0 #808080;
+    
 }
 
-p {
-    margin: 2%;
-    font-family: "Fredoka One";
+.subtitulo{
+    margin: 20px;
+    font: bold 48px Fredoka One, Serif;
+    /*font-family: "Fredoka One";*/
     font-size: 20px;
+    text-align: center;
 }
 
-button {
+.btn-outline-secondary{
     margin: 0% 1% 1% 0%;
-    /* BORDES */
-    background: transparent;
     border: 2px solid transparent;
     border-image: var(--gradient);
     border-image-slice: 1%;
 
-    border-right: 5px solid var(--color1);
-    border-left: 5px solid var(--color2);
+    border-right: 3px solid var(--color1);
+    border-left: 3px solid var(--color2);
 
-    /* TEXTOS */
     color: var(--color1);
     font-family: sans-serif;
     font-size: 17px; 
     font-weight: bold;
 }
 
+.btn-outline-secondary:hover{
+    background: var(--gradient);
+    transform: translateY(-4px);
+}
+
 #principal button{
-    width:150px;
-    margin:5px;
+    width:200px;
+    margin:20px;
     border-radius: 5px;
+    border: 2px solid transparent;
+    border-image: var(--gradient);
+    border-image-slice: 1%;
+    border-right: 5px solid var(--color1);
+    border-left: 5px solid var(--color2);
 }
 
 #principal{

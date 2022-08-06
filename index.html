@@ -1,4 +1,5 @@
 <html>
+    <title>GRUPO-05</title>
 
 <head>
 
@@ -61,137 +62,120 @@
 
 <body>
 
+    <!--MENU PRINCIPAL-->
     <div id="principal">
+        
         <div class="container">
             <div class="row text-center" style="margin-bottom: 50px;">
                 <div class="col">
-                    <h1>ALGORITMOS DE OSVALDO CAIRO</h1>
+                    <h1 class="titulo">ALGORITMOS DE OSVALDO CAIRO</h1>
                 </div>
             </div>
             <div class="row text-center">
                 <div class="col-xs-12 col-sm-12 col-md-4 buttonleftmenu">
-                        <button onclick="clickListaSimplementeEnlazada()">LISTA SIMPLEMENTE LIGADA</button>
+                        <button type="button" class="btn btn-outline-secondary" onclick="clickListaSimplementeEnlazada()">LISTA SIMPLEMENTE LIGADA</button>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-4 md-auto">
-                        <button onclick="clickListaCirsularSimplementeEnlazada()">LISTA CIRCULAR SIMPLEMENTE LIGADA</button>
+                        <button type="button" class="btn btn-outline-secondary" onclick="clickListaCirsularSimplementeEnlazada()">LISTA CIRCULAR SIMPLEMENTE LIGADA</button>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-4 buttonrightmenu">
-                        <button onclick="clickListaDoblementeEnlazada()">LISTA DOBLEMENTE LIGADA</button>
+                        <button type="button" class="btn btn-outline-secondary" onclick="clickListaDoblementeEnlazada()">LISTA DOBLEMENTE LIGADA</button>
                 </div>
             </div>
         </div>
+        
     </div>
 
+    <!--LISTAS SIMPLEMENTE ENLAZADAS-->
     <div id="vista1" style="display: none">
 
-        
-        <h1>LISTAS SIMPLEMENTE ENLAZADAS</h1>
+        <div class="col" style="margin-top:20px">
+            <h1 class="titulo">LISTA SIMPLEMENTE ENLAZADA</h1> 
+        </div>
 
-        <center><canvas id="tutorial" width="700" height="150"></canvas></center>
-        <div id="salida"></div>
-        <center>
-            <p>INSERCION EN LISTAS</p>
-            <button onclick="agregar_inicio()">INSERTA INICIO</button>
-            <button onclick="agregar_final()">INSERTA FINAL</button>
-            <button onclick="agregar_antes_X()">INSERTAR ANTES DE X</button>
-            <button onclick="agregar_despues_X()">INSERTAR DESPUES DE X</button>
-
-            <p>ELIMINACION EN LISTAS</p>
-            <button onclick="eliminar_inicio()">ELIMINAR INICIO</button>
-            <button onclick="eliminar_final()">ELIMINAR FINAL</button>
-            <button onclick="eliminar_X()">ELIMINAR UN NODO X</button>
-            <button onclick="eliminar_antes_X()">ELIMINAR ANTES DE X</button>
-            <button onclick="eliminar_despues_X()">ELIMINAR DESPUES DE X</button>
-            
-            <p></p>
-            <button onclick="window.history.back()">MENU</button>
-            
-        </center>
+        <div style="margin: 10px">   
+            <div class="col text-center">
+                <canvas id="tutorial" width="700" height="150"></canvas>
+            </div>
         
-        <!--
-        <div class="container">
-            <div class="row text-center">
-                <div class="col" style="margin-top:20px">
-                    <h4>LISTA SIMPLEMENTE LIGADA</h4> 
+            <div class="contanier">
+
+                <h1 class="subtitulo">INSERCION EN LISTAS</h1>
+                <div class="col text-center">
+                    <button type="button" class="btn btn-outline-secondary" onclick="agregar_inicio()">INSERTA INICIO</button>
+				    <button type="button" class="btn btn-outline-secondary" onclick="agregar_final()">INSERTA FINAL</button>
+				    <button type="button" class="btn btn-outline-secondary" onclick="agregar_antes_X()">INSERTA ANTES DE X</button>
+				    <button type="button" class="btn btn-outline-secondary" onclick="agregar_despues_X()">INSERTA DESPUES DE X</button>
+                </div>
+                <h1 class="subtitulo">ELIMINACION EN LISTAS</h1>
+                <div class="col text-center">
+                    <button type="button" class="btn btn-outline-secondary" onclick="eliminar_inicio()">ELIMINA INICIO</button>
+				    <button type="button" class="btn btn-outline-secondary" onclick="eliminar_final()">ELIMINA FINAL</button>
+				    <button type="button" class="btn btn-outline-secondary" onclick="eliminar_X()">ELIMINA UN NODO X</button>
+				    <button type="button" class="btn btn-outline-secondary" onclick="eliminar_antes_X()">ELIMINA ANTES DE X</button>
+                    <button type="button" class="btn btn-outline-secondary" onclick="eliminar_despues_X()">ELIMINA DESPUES DE X</button>
+                </div>
+
+                <div class="col text-center">
+                    <br><br>
+                    <button type="button" class="btn btn-outline-secondary" onclick="window.history.back()">VOLVER AL MENU</button>
+                </div>
+            </div>
+        </div>
+
+    </div> 
+
+    <!--LISTAS CIRCULARES SIMPLEMENTE ENLAZADAS-->
+    <div id="vista2" style="display:none">
+
+        <div class="col" style="margin-top:20px">
+            <h1 class="titulo">LISTA CIRCULAR SIMPLEMENTE ENLAZADA</h1> 
+        </div>
+
+        <div style="margin: 10px">   
+            <div class="col text-center">
+                <canvas id="tutorial2" width="700" height="150"></canvas>
+            </div>
+        
+            <div class="contanier">
+
+                <h1 class="subtitulo">INSERCION EN LISTAS</h1>
+                <div class="col text-center">
+                    <button type="button" class="btn btn-outline-secondary" onclick="agregar_inicio_lstCir()">INSERTA INICIO</button>
+				    <button type="button" class="btn btn-outline-secondary" onclick="agregar_final_lstCir()">INSERTA FINAL</button>
+				    <button type="button" class="btn btn-outline-secondary" onclick="agregar_antes_X_lstCir()">INSERTA ANTES DE X</button>
+				    <button type="button" class="btn btn-outline-secondary" onclick="agregar_despues_X_lstCir()">INSERTA DESPUES DE X</button>
+                </div>
+                <h1 class="subtitulo">ELIMINACION EN LISTAS</h1>
+                <div class="col text-center">
+                    <button type="button" class="btn btn-outline-secondary" onclick="eliminar_inicio_lstCir()">ELIMINA INICIO</button>
+				    <button type="button" class="btn btn-outline-secondary" onclick="eliminar_final_lstCir()">ELIMINA FINAL</button>
+				    <button type="button" class="btn btn-outline-secondary" onclick="eliminar_X_lstCir()">ELIMINA UN NODO X</button>
+				    <button type="button" class="btn btn-outline-secondary" onclick="eliminar_antes_X_lstCir()">ELIMINA ANTES DE X</button>
+                    <button type="button" class="btn btn-outline-secondary" onclick="eliminar_despues_X_lstCir()">ELIMINA DESPUES DE X</button>
+                </div>
+
+                <div class="col text-center">
+                    <br><br>
+                    <button type="button" class="btn btn-outline-secondary" onclick="window.history.back()">VOLVER AL MENU</button>
                 </div>
             </div>
         </div>
     
-    
-        <div style="margin: 10px">   
-            <canvas id="tutorial"></canvas>
-        </div>
-    
-        <div style="margin: 10px">
-    
-            <div class="container">
-                <div class="row text-center">
-                <div class="col-xs-12 col-sm-12 col-md-6 ">
-                        <button onclick="insertar_al_inicio()">INSERTAR AL INICIO</button>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-6">
-                        <button onclick="insertar_al_final()">INSERTAR AL FINAL</button>
-                </div>
-                </div>
-                <div class="row text-center">
-                    <div class="col-xs-12 col-sm-12 col-md-6">
-                        <button onclick="insertar_antes_x()">INSERTAR ANTES DE X</button>
-                    </div>
-                    <div class="col-xs-12 col-sm-12 col-md-6">
-                        <button onclick="elimina_inicio()">ELIMINAR AL INICIO</button>
-                    </div>
-                </div>
-                <div class="row text-center">
-                    <div class="col">
-                        <button onclick="window.history.back()">MENU</button>
-                    </div>
-                </div>
-            </div>  
-    
-        </div>
-        -->
-    </div> 
-
-    <div id="vista2" style="display:none">
-
-        <h1>LISTAS CIRCULARES SIMPLEMENTE ENLAZADAS</h1>
-
-        <center><canvas id="tutorial2" width="700" height="150"></canvas></center>
-        <div id="salida"></div>
-        <center>
-            <p>INSERCION EN LISTAS</p>
-            <button onclick="agregar_inicio_lstCir()">INSERTA INICIO</button>
-            <button onclick="agregar_final_lstCir()">INSERTA FINAL</button>
-            <button onclick="agregar_antes_X_lstCir()">INSERTAR ANTES DE X</button>
-            <button onclick="agregar_despues_X_lstCir()">INSERTAR DESPUES DE X</button>
-
-            <p>ELIMINACION EN LISTAS</p>
-            <button onclick="eliminar_inicio_lstCir()">ELIMINAR INICIO</button>
-            <button onclick="eliminar_final_lstCir()">ELIMINAR FINAL</button>
-            <button onclick="eliminar_X_lstCir()">ELIMINAR UN NODO X</button>
-            <button onclick="eliminar_antes_X_lstCir()">ELIMINAR ANTES DE X</button>
-            <button onclick="eliminar_despues_X_lstCir()">ELIMINAR DESPUES DE X</button>
-            
-            <p></p>
-            <button onclick="window.history.back()">MENU</button>
-            
-        </center>
-    
     </div>
 
+    <!--LISTAS DOBLEMENTE ENLAZADAS-->
     <div id="vista3" style="display:none">
 
         <div id="principal">
             <div class="container">
                 <div class="row text-center" style="margin-bottom: 50px;">
                     <div class="col">
-                        <h1>EN DESARROLLO ...</h1>
+                        <h1 class="titulo">EN DESARROLLO ...</h1>
                     </div>
                 </div>
-                <div class="row text-center">
-                    <div class="col">
-                        <button onclick="window.history.back()">MENU</button>
-                    </div>
+                <div class="col text-center">
+                    <button type="button" class="btn btn-outline-secondary" onclick="window.history.back()">VOLVER AL MENU</button>
                 </div>
             </div>
         </div>
