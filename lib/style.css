@@ -7,41 +7,32 @@
 }
 
 body {
-    min-height: 100;
     background: linear-gradient(to right, #e0eafc, #cfdef3);
     /*background: linear-gradient(to bottom, #ffefba, #ffffff);*/
+    position: relative;
 }
 
 canvas { 
     background-color: white;
-    /*
-    border: 2px solid transparent;
-    border-image: var(--gradient);
-    border-image-slice: 1%;*/
     border-radius: 15px;
     border: 2px solid #808080;
     padding: 20px;
     box-shadow: 5px 6px #808080;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 
 .titulo{
-    /*
-    font-family: "Fredoka One";
-    font-size: 48px;
-    text-align: center;
-    */
     margin: 0 auto;
     text-align: center;
     font: italic bold 48px Fredoka One, Serif;
     text-shadow: 4px 3px 0 #808080;
-    
 }
 
 .subtitulo{
     margin: 20px;
     font: bold 48px Fredoka One, Serif;
-    /*font-family: "Fredoka One";*/
     font-size: 20px;
     text-align: center;
 }
